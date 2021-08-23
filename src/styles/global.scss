@@ -1,0 +1,35 @@
+@import './media.scss';
+
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--black500);
+  background-color: var(--black900);
+
+  @include tablet {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  &.scroll-lock {
+    overflow: hidden;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

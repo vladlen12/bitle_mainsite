@@ -1,0 +1,48 @@
+body {
+  --black900: #111112;
+  --black800: #232325;
+  --black700: #33343E;
+  --black600: #9A9BA2;
+  --black500: #E3E3E7;
+  --gray100: #FAFAFF;
+  --white100: #FFFFFF;
+
+  //colors
+  --main900: #38D47E;
+  --main900-rgb: 56, 212, 126;
+  --green900: #2CB774;
+  --warning900: #FF5655;
+  --pink900: #F6339A;
+  --violet900: #BE22E2;
+  --violet800: #7802E4;
+  --navy900: #3206AC;
+  --navy800: #0D05BA;
+  --secondary900: #7B61FF;
+  --marina900: #A6D4FF;
+  --accent900: #FFD965;
+  --accent800: #FFB865;
+
+  //gradients
+  --gradient1: linear-gradient(340.26deg, #38D499 -7.49%, #A0D1F1 11.93%, #279EEF 33.04%, #443DF6 55.42%, #9E68EF 73.57%);
+  --gradient2: linear-gradient(90deg, #38D499 0%, #A0D1F1 31.98%, #279EEF 50%, #443DF6 66.96%, #9E68EF 100%);
+  --gradient3: linear-gradient(340.26deg, #38D499 -7.49%, #A0D1F1 11.93%, #279EEF 33.04%, #443DF6 55.42%, #9E68EF 73.57%);
+  --gradient4: linear-gradient(180deg, #FFD965 6.87%, #FFB865 92.29%);
+  --gradient5: linear-gradient(180deg, #FED13C 2.92%, #DD2A95 51.46%, #471180 100%);
+  --gradient6: linear-gradient(180deg, #451181 0%, #9654FB 100%);
+  --gradient7: linear-gradient(270deg, #A6D4FF 0%, #6990FF 100%);
+  --gradient8: linear-gradient(180deg, #CB36FC 0%, #4B8FFB 100%);
+  --gradient9: linear-gradient(270deg, #D630FC 0.16%, #762DF5 99.84%);
+  --gradient10: linear-gradient(270deg, #2CB774 0%, #3FE388 100%);
+  --gradient11: linear-gradient(180deg, #38D499 0%, #A0D1F1 31.98%, #279EEF 50%, #443DF6 66.96%, #9E68EF 100%);
+  --gradient12: linear-gradient(0deg, #38D499 0%, #A0D1F1 19.35%, #279EEF 40.38%, #443DF6 62.66%, #9E68EF 80.75%);
+}
+
+body.white-theme {
+  --black900: #FAFAFF;
+  --black800: #FFFFFF;
+  --black700: #E3E3E7;
+  --black600: #9A9BA2;
+  --black500: #51525C;
+  --gray100: #111112;
+  --white100: #232325;
+}

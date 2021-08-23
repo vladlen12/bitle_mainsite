@@ -1,0 +1,30 @@
+@import '../../../styles/media.scss';
+
+.container {
+  padding-right: 28px;
+  padding-left: 28px;
+
+  @include tablet {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  @include desktop {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.sm {
+  max-width: 708px;
+}
+
+.md {
+  max-width: 932px;
+}
+
+.lg {
+  max-width: 1156px;
+}

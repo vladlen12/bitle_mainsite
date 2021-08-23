@@ -1,0 +1,12 @@
+@import '../../../styles/media.scss';
+
+.text {
+  &.bold {
+    font-weight: 700;
+  }
+
+  &.sm {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

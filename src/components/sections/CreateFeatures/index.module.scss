@@ -1,0 +1,83 @@
+@import '../../../styles/media.scss';
+
+.createFeatures {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 64px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 79px;
+    height: 292px;
+    left: 0;
+    top: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../../../assets/svg/main-decoration-left-1.svg");
+
+    @include tablet {
+      width: 100px;
+      height: 370px;
+      top: 436px;
+    }
+
+    @include desktop {
+      width: 149px;
+      height: 552px;
+    }
+  }
+}
+
+.sectionDecoration {
+  width: 100%;
+  height: 176px;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 80px;
+  line-height: 0;
+  overflow: hidden;
+
+  svg {
+    width: 1321px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.sectionContent {
+  max-width: 430px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 48px;
+}
+
+.sectionText {
+  margin-bottom: 20px;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.sectionTextBold {
+  color: var(--white100)
+}
+
+.sectionActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sectionButton {
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -1,0 +1,40 @@
+.card {
+  width: calc(100% / 3 - 24px);
+  padding: 32px;
+  padding-bottom: 136px;
+  margin: 12px;
+  border-radius: 8px;
+  border: 1px solid;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+.theme1 {
+  border-color: var(--accent900);
+  background-image: url('../../../../assets/svg/card-decoration1.svg');
+}
+
+.theme2 {
+  border-color: var(--pink900);
+  background-image: url('../../../../assets/svg/card-decoration2.svg');
+}
+
+.theme3 {
+  border-color: var(--secondary900);
+  background-image: url('../../../../assets/svg/card-decoration3.svg');
+}
+
+.theme4 {
+  border-color: var(--marina900);
+  background-image: url('../../../../assets/svg/card-decoration4.svg');
+}
+
+.theme5 {
+  border-color: var(--violet900);
+  background-image: url('../../../../assets/svg/card-decoration5.svg');
+}
+
+.theme6 {
+  border-color: var(--secondary900);
+  background-image: url('../../../../assets/svg/card-decoration6.svg');
+}

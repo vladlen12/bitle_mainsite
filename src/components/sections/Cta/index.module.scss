@@ -1,0 +1,110 @@
+@import '../../../styles/media.scss';
+
+.cta {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .ctaTitle {
+    margin-bottom: 40px;
+  }
+
+  .ctaCards {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .ctaCard {
+    text-align: left;
+    width: 312px;
+    margin: 0;
+  }
+}
+
+.ctaBorder {
+  padding: 1px;
+  background-image: var(--gradient1);
+  border-radius: 8px;
+}
+
+.ctaInner {
+  position: relative;
+  padding: 59px 31px;
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--black900);
+
+  @include tablet {
+    padding: 59px 77px;
+  }
+
+  @include desktop {
+    padding: 59px 111px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 72px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include tablet {
+      width: 136px;
+      height: 120px;
+    }
+
+    @include desktop {
+      width: 163px;
+      height: 145px;
+    }
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+    background-image: url("../../../assets/svg/cta-decoration-top.svg");
+  }
+
+  &::after {
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../assets/svg/cta-decoration-bottom.svg");
+  }
+}
+
+.text {
+  margin-bottom: 40px;
+
+  @include tablet {
+    max-width: 648px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @include desktop {
+    margin-bottom: 52px;
+  }
+}
+
+.textSm {
+  @include tablet {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.button {
+  min-width: 192px;
+
+  @include tablet {
+    min-width: 216px;
+  }
+}
