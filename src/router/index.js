@@ -8,7 +8,7 @@ import About from "../pages/About";
 import Blockchain from "../pages/Blockchain";
 import Contact from "../pages/Contact";
 import Home from "../pages/Home";
-import NotFoundPage from "../pages/NotFoundPage";
+// import NotFoundPage from "../pages/NotFoundPage";
 import Projects from "../pages/Projects";
 import Roadmap from "../pages/Roadmap";
 
@@ -22,8 +22,7 @@ const AppRouter = () => {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/roadmap" component={Roadmap} />
         <Route exact path="/contact-us" component={Contact} />
-        <Route path="/404" component={NotFoundPage} />
-        <Redirect from="*" to="/404" />
+        <Redirect from="*" to="/" />
       </Switch>
     </Router>
   );
