@@ -1,0 +1,137 @@
+.mobileBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black800);
+  border-radius: 8px;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 200;
+  pointer-events: none;
+
+  &.isActive {
+    pointer-events: initial;
+  }
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  min-height: 100vh;
+  max-height: 100vh;
+  transform: translateX(100%);
+  transition: .3s;
+  background-color: var(--black800);
+  z-index: 300;
+
+  &.isOpen {
+    transform: translateX(0);
+    box-shadow: 0px 0px 20px rgba(var(--shadow), 0.2);
+  }
+}
+
+.mobileMenuInner {
+  padding: 28px 40px;
+  overflow: scroll;
+  max-height: 100%;
+}
+
+.menuHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 28px;
+}
+
+.menuTitle {
+  text-transform: uppercase;
+}
+
+.menuBody {
+  padding-bottom: 28px;
+}
+
+.menuLangTitle {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--black600);
+
+  img {
+    margin-right: 8px;
+  }
+
+  &.isOpen {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+
+  svg {
+    position: absolute;
+    right: 7px;
+    top: 12px;
+    transition: .3s;
+  }
+}
+
+.menuLangBody {
+  max-height: 0;
+  margin-bottom: 28px;
+  overflow: hidden;
+
+  &.isOpen {
+    max-height: none;
+    border-bottom: 1px solid var(--black600);
+  }
+}
+
+.menuLangItem {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  &:first-child {
+    margin-top: 16px;
+  }
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  &.active {
+    color: var(--secondary900);
+    pointer-events: none;
+  }
+
+  img {
+    margin-right: 8px;
+  }
+}
+
+.menuFooter {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginBtn {
+  margin-right: 20px;
+}

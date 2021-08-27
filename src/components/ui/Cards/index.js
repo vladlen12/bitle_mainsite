@@ -5,9 +5,10 @@ import CardWithIcon from "./CardWithIcon";
 
 import css from "./index.module.scss";
 
-const Cards = ({ data, iconCard, decorationCard }) => {
+const Cards = ({ id, data, iconCard, decorationCard }) => {
   return (
     <Row
+      id={id}
       mod={cn({
         [css.cardsWithIcon]: iconCard,
         [css.cardsWithDecoration]: decorationCard,

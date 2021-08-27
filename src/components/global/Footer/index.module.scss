@@ -1,4 +1,192 @@
+@import "../../../styles/media.scss";
+
 .footer {
-  height: 558px;
-  background-color: red;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  .sectionNavigationRow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sectionProjectsColumn,
+  .sectionCompanyColumn,
+  .sectionBlockchainColumn,
+  .sectionContactColumn {
+    width: calc(50% - 12px);
+    margin-bottom: 40px;
+
+    @include tablet {
+      width: calc(50% - 49px);
+      margin-bottom: 64px;
+    }
+
+    @include desktop {
+      width: calc(25% - 49px);
+      max-width: 200px;
+    }
+  }
+
+  .sectionContactColumn {
+    @include desktop {
+      order: 0;
+    }
+  }
+
+  .sectionCompanyColumn {
+    @include desktop {
+      order: 1;
+    }
+  }
+
+  .sectionProjectsColumn {
+    @include desktop {
+      order: 2;
+    }
+  }
+
+  .sectionBlockchainColumn {
+    @include tablet {
+      order: 3;
+    }
+  }
+
+  .title {
+    margin-bottom: 22px;
+
+    @include tablet {
+      margin-bottom: 40px;
+    }
+  }
+
+  .link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    line-height: 26px;
+    color: var(--white100);
+    text-decoration: none;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: var(--main900);
+    }
+
+    @include tablet {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+  }
+
+  .contactText {
+    font-size: 12px;
+    line-height: 16px;
+
+    @include tablet {
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .colored {
+      text-transform: uppercase;
+      color: var(--main900)
+    }
+  }
+
+  .sectionFooterRow {
+    margin-bottom: -24px;
+
+    @include tablet {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: -32px;
+    }
+
+    @include desktop {
+      margin-bottom: 0;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  }
+
+  .sectionThemeColumn,
+  .sectionSocialsColumn,
+  .sectionMailColumn,
+  .sectionCopyrightColumn {
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include tablet {
+      text-align: left;
+      width: 50%;
+      margin-bottom: 32px;
+    }
+
+    @include desktop {
+      width: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .sectionThemeColumn {
+    @include tablet {
+      text-align: right;
+    }
+
+    @include desktop {
+      order: 3;
+    }
+  }
+
+  .sectionSocialsColumn {
+    line-height: 0;
+
+    @include tablet {
+      order: -1;
+    }
+  }
+
+  .sectionMailColumn {
+    @include desktop {
+      order: 2;
+    }
+  }
+
+  .sectionCopyrightColumn {
+    @include tablet {
+      text-align: right;
+    }
+
+    @include desktop {
+      order: 1;
+    }
+  }
+
+  .socialLink {
+    display: inline-block;
+    margin-right: 24px;
+    line-height: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .mailToLink {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--white100);
+  }
+
+  .copyrightText {
+    color: var(--black600);
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

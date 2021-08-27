@@ -3,6 +3,7 @@ import { Container, Section, Text, Title } from "..";
 import css from "./index.module.scss";
 
 const CommonSection = ({
+  id,
   withoutTopIndent,
   subtitle,
   title,
@@ -11,6 +12,7 @@ const CommonSection = ({
 }) => {
   return (
     <Section
+      id={id}
       mod={cn([
         css.contentSection,
         { [css.withoutTopIndent]: withoutTopIndent },

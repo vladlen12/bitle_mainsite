@@ -11,10 +11,11 @@
     width: 79px;
     height: 292px;
     left: 0;
-    top: 120px;
+    top: 380px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../../../assets/svg/main-decoration-left-1.svg");
+    z-index: -1;
 
     @include tablet {
       width: 100px;
@@ -55,6 +56,10 @@
   margin-bottom: 48px;
 }
 
+.sectionTitle {
+  text-align: center;
+}
+
 .sectionText {
   margin-bottom: 20px;
   text-align: center;
@@ -69,15 +74,25 @@
 }
 
 .sectionActions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .sectionButton {
-  margin-right: 24px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
 
   &:last-child {
+    margin-bottom: 0;
     margin-right: 0;
   }
 }

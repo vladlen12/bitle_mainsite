@@ -14,14 +14,26 @@
   }
 
   .ctaCards {
-    display: flex;
-    justify-content: space-between;
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .ctaCard {
-    text-align: left;
-    width: 312px;
+    width: 100%;
     margin: 0;
+    margin-bottom: 60px;
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include desktop {
+      width: 312px;
+
+    }
   }
 }
 

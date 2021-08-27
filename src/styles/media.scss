@@ -16,12 +16,6 @@
   }
 }
 
-@mixin desktop-xxl {
-  @media screen and (min-width: 1500px) {
-    @content;
-  }
-}
-
 @mixin custopBP($width) {
   @media screen and (min-width: $width) {
     @content;

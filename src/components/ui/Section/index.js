@@ -1,9 +1,13 @@
-const Section = ({ mod, children }) => {
+const Section = ({ id, mod, children }) => {
   let newMod = mod;
   if (Array.isArray(mod)) {
     newMod = mod.join(" ");
   }
-  return <section className={newMod}>{children}</section>;
+  return (
+    <section id={id} className={newMod}>
+      {children}
+    </section>
+  );
 };
 
 export default Section;

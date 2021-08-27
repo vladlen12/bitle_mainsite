@@ -3,9 +3,11 @@ body {
   --black800: #232325;
   --black700: #33343E;
   --black600: #9A9BA2;
+  --black600-rgb: 154, 155, 162;
   --black500: #E3E3E7;
   --gray100: #FAFAFF;
   --white100: #FFFFFF;
+  --shadow: 255, 255, 255;
 
   //colors
   --main900: #38D47E;
@@ -18,6 +20,7 @@ body {
   --navy900: #3206AC;
   --navy800: #0D05BA;
   --secondary900: #7B61FF;
+  --secondary900rgb: 123, 97, 255;
   --marina900: #A6D4FF;
   --accent900: #FFD965;
   --accent800: #FFB865;
@@ -45,4 +48,5 @@ body.white-theme {
   --black500: #51525C;
   --gray100: #111112;
   --white100: #232325;
+  --shadow: 0, 0, 0;
 }

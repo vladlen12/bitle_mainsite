@@ -417,7 +417,7 @@ const CreateFeatures = () => {
         </svg>
       </Row>
       <Container sm>
-        <Title tag="h1" pageTitle text="We create the future" />
+        <Title tag="h1" mod={css.sectionTitle} pageTitle text="We create the future" />
         <Row mod={css.sectionContent}>
           <Text bold mod={[css.sectionText, css.sectionTextBold]}>
             BITL - is a company that combines Blockchain with areas in which the

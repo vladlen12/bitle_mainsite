@@ -18,14 +18,47 @@
   color: var(--black800);
   transition: .3s;
 
-  &:hover {}
+  &:hover {
+    background-color: var(--main700);
+  }
 
-  &:active {}
+  &:active {
+    background-color: var(--main700);
+  }
+
+  &:disabled {
+    background-color: var(--black600);
+  }
 }
 
 .secondary {
   background-color: rgba(var(--main900-rgb), 0.2);
-  color: var(--main900)
+  color: var(--main900);
+
+  &:hover {
+    background-color: rgba(var(--main900-rgb), 0.3);
+  }
+
+  &:active {
+    background-color: rgba(var(--main900-rgb), 0.4);
+  }
+
+  &:disabled {
+    background-color: rgba(var(--black600-rgb), 0.2);
+  }
+}
+
+.transparent {
+  min-width: auto;
+  padding: 0;
+  height: auto;
+  background-color: transparent;
+  color: var(--white100);
+}
+
+.sm {
+  min-width: 160px;
+  height: 40px;
 }
 
 .lg {

@@ -8,6 +8,7 @@ const Title = ({
   sectionTitle,
   subSectionTitle,
   smalTitle,
+  footerTitle,
   mod,
   text,
 }) => {
@@ -20,6 +21,7 @@ const Title = ({
         [css.sectionTitle]: sectionTitle,
         [css.subSectionTitle]: subSectionTitle,
         [css.smalTitle]: smalTitle,
+        [css.footerTitle]: footerTitle,
       },
     ]),
     dangerouslySetInnerHTML: { __html: text },

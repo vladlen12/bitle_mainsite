@@ -2,10 +2,18 @@
 
 .whatRoadmap {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
 
   .sectionText {
-    margin-bottom: 72px;
+    margin-bottom: 40px;
+
+    @include tablet {
+      margin-bottom: 72px;
+    }
 
     &:last-child {
       margin-bottom: 0;
@@ -14,18 +22,20 @@
   }
 
   .steps {
-    padding-top: 118px;
     max-width: 568px;
     margin-right: auto;
     margin-left: auto;
     position: relative;
+
+    @include tablet {
+      padding-top: 118px;
+    }
   }
 
   .stepsDecoration {
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 20px;
     width: 2px;
     height: 100%;
     background-image:
@@ -41,23 +51,35 @@
         #443DF6 73.72%,
         #A6D4FF 83.5%,
         #38D47E 94.85%, );
+
+    @include tablet {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
   .step {
     position: relative;
     max-width: 304px;
-    min-height: 162px;
+    margin-bottom: 32px;
+    padding-left: 56px;
 
-    &:nth-child(2n - 1) {
-      margin-left: auto;
+    @include tablet {
+      min-height: 162px;
+      margin-bottom: 0;
+      padding-left: 0;
 
-      .stepInner {
+      &:nth-child(2n - 1) {
         margin-left: auto;
-      }
 
-      .stepDecoration {
-        right: auto;
-        left: 0;
+        .stepInner {
+          margin-left: auto;
+        }
+
+        .stepDecoration {
+          right: auto;
+          left: 0;
+        }
       }
     }
   }
@@ -70,12 +92,14 @@
   .stepDecoration {
     position: absolute;
     top: 0;
-    right: 0;
+    left: 0;
     z-index: 2;
     line-height: 0;
     background-color: var(--black900);
+
+    @include tablet {
+      left: auto;
+      right: 0;
+    }
   }
-
-  .stepDecorationImage {}
-
 }

@@ -47,6 +47,7 @@ const data = [
 const WhyBlockchain = () => {
   return (
     <CommonSection
+      id="why-blockchain-UMI"
       subtitle="Why blockchain UMI?"
       title="The list of the main advantages of the technology:"
       description="The uniqueness and capabilities of the UMI blockchain"

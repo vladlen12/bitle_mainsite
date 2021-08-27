@@ -9,6 +9,7 @@ import Accordion from "./Accordion";
 import Title from "./Title";
 import Text from "./Text";
 import Button from "./Button";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 export {
   CommonSection,
@@ -22,4 +23,5 @@ export {
   Title,
   Text,
   Button,
+  ThemeSwitcher,
 };

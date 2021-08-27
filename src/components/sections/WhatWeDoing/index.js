@@ -4,7 +4,7 @@ import css from "./index.module.scss";
 
 const WhatWeDoing = () => {
   return (
-    <Section mod={css.whatWeDoing}>
+    <Section id="what-we-doing" mod={css.whatWeDoing}>
       <Container sm>
         <Title tag="h3" text="What are we doing?" subSectionTitle />
         <Title

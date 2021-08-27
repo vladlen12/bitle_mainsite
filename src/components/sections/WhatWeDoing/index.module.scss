@@ -2,8 +2,16 @@
 
 .whatWeDoing {
   position: relative;
-  padding-top: 200px;
-  padding-bottom: 160px;
+  padding-bottom: 80px;
+
+  @include tablet {
+    padding-bottom: 120px;
+  }
+
+  @include desktop {
+    padding-top: 200px;
+    padding-bottom: 160px;
+  }
 
   &::before {
     content: "";

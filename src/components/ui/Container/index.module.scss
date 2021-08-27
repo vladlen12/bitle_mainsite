@@ -3,6 +3,8 @@
 .container {
   padding-right: 28px;
   padding-left: 28px;
+  margin-right: auto;
+  margin-left: auto;
 
   @include tablet {
     padding-right: 120px;
@@ -12,13 +14,16 @@
   @include desktop {
     padding-right: 30px;
     padding-left: 30px;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
 .sm {
   max-width: 708px;
+
+  @include tablet {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
 }
 
 .md {

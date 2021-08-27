@@ -21,6 +21,7 @@ const data = [
 const PlansAndGoals = () => {
   return (
     <CommonSection
+      id="our-plans"
       subtitle="Plans and goals UMI"
       title="Our capabilities and plans based on the UMI "
       description="Due to the fact that we have the ability to make a large number of transactions per second with zero commission, we can use this blockchain in new directions that were previously inaccessible due to the high cost and low speed of transaction processing."

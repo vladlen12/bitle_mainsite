@@ -1,12 +1,30 @@
+@import '../../../styles/media.scss';
+
 .cardsWithIcon {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: -64px;
-  margin-right: -68px;
-  margin-left: -68px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: -64px;
+    margin-right: -45px;
+    margin-left: -45px;
+  }
+
+  @include desktop {
+    justify-content: flex-start;
+    margin-right: -68px;
+    margin-left: -68px;
+  }
 }
 
 .cardsWithDecoration {
   display: flex;
+  overflow: scroll;
   margin: -12px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

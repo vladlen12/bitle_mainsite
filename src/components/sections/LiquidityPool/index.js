@@ -21,6 +21,7 @@ const data = [
 const LiquidityPool = () => {
   return (
     <CommonSection
+      id="consensus-PoA"
       subtitle="Liquidity pool UMI"
       title="Our liquidity pool based on UMI"
       description={

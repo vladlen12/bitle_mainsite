@@ -40,7 +40,7 @@ const OurProjects = () => {
       title="Our projects"
       description="Bitl's own development  and implementation of  blockchain technologies "
     >
-      <Cards data={data} iconCard />
+      <Cards id="our-projects" data={data} iconCard />
     </CommonSection>
   );
 };

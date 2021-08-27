@@ -78,6 +78,7 @@ const data = [
 const BlockchainCapabilities = () => {
   return (
     <CommonSection
+      id="info"
       withoutTopIndent
       title="UMI blockchain capabilities"
       description="The main advantages that distinguish this blockchain from all."

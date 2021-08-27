@@ -1,9 +1,33 @@
+@import "../../../styles/media.scss";
+
 .header {
-  height: 80px;
   width: 100%;
-  background-color: blue;
+  padding: 14px 20px;
+  max-width: 1360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 123;
+  background: var(--black900);
+
+  @include desktop {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+}
+
+.logo {
+  line-height: 0;
+
+  @include desktop {
+    margin-right: auto;
+  }
+}
+
+.loginBtn {
+  margin-right: 20px;
 }

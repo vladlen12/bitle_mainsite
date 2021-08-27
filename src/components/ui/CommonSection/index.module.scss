@@ -1,11 +1,21 @@
 @import '../../../styles/media.scss';
 
 .contentSection {
-  padding-top: 80px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+
   overflow: hidden;
 }
 
 .sectionText {
-  margin-bottom: 64px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
 }
