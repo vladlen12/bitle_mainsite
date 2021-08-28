@@ -1,7 +1,6 @@
 import { HashLink as NavLink } from "react-router-hash-link";
 import { useRouteMatch } from "react-router-dom";
 import cn from "classnames";
-// import { NavLink } from "react-router-dom";
 import css from "./index.module.scss";
 
 const navigationData = [
