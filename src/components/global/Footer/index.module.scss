@@ -172,6 +172,12 @@
     margin-right: 24px;
     line-height: 0;
 
+    &:hover {
+      svg rect {
+        fill: var(--main900);
+      }
+    }
+
     &:last-child {
       margin-right: 0;
     }

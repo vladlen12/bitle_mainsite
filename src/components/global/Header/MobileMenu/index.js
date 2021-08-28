@@ -32,6 +32,12 @@ const MobileMenu = () => {
     handleChangeMenuState();
   };
 
+  useState(() => {
+    if (!openMenu) {
+      document.body.style.overflow = "";
+    }
+  }, [openMenu]);
+
   return (
     <>
       <div className={css.mobileBtn} onClick={handleChangeMenuState}>
