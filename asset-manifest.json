@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/bitle_mainsite/static/css/main.1633c662.chunk.css",
-    "main.js": "/bitle_mainsite/static/js/main.bb1d5d97.chunk.js",
-    "main.js.map": "/bitle_mainsite/static/js/main.bb1d5d97.chunk.js.map",
+    "main.css": "/bitle_mainsite/static/css/main.a82bb80f.chunk.css",
+    "main.js": "/bitle_mainsite/static/js/main.e4c1ae8a.chunk.js",
+    "main.js.map": "/bitle_mainsite/static/js/main.e4c1ae8a.chunk.js.map",
     "runtime-main.js": "/bitle_mainsite/static/js/runtime-main.aedbff60.js",
     "runtime-main.js.map": "/bitle_mainsite/static/js/runtime-main.aedbff60.js.map",
     "static/js/2.befceb8f.chunk.js": "/bitle_mainsite/static/js/2.befceb8f.chunk.js",
     "static/js/2.befceb8f.chunk.js.map": "/bitle_mainsite/static/js/2.befceb8f.chunk.js.map",
     "index.html": "/bitle_mainsite/index.html",
-    "static/css/main.1633c662.chunk.css.map": "/bitle_mainsite/static/css/main.1633c662.chunk.css.map",
+    "static/css/main.a82bb80f.chunk.css.map": "/bitle_mainsite/static/css/main.a82bb80f.chunk.css.map",
     "static/js/2.befceb8f.chunk.js.LICENSE.txt": "/bitle_mainsite/static/js/2.befceb8f.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/bitle_mainsite/static/media/Gilroy-Regular.b91b0127.ttf",
     "static/media/index.module.scss": "/bitle_mainsite/static/media/main-decoration-right-5.0eaf6ba8.svg",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.aedbff60.js",
     "static/js/2.befceb8f.chunk.js",
-    "static/css/main.1633c662.chunk.css",
-    "static/js/main.bb1d5d97.chunk.js"
+    "static/css/main.a82bb80f.chunk.css",
+    "static/js/main.e4c1ae8a.chunk.js"
   ]
 }
